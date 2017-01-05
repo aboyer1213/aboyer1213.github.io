@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	<meta name="viewport" content="device-width, initial-scale=1"/>
+	<meta name="keywords" content="Linda Boyer, Boyer, art, fine art, paintings, drawings, Lebanon, Lebanon fair, Lebanon valley fair, arrangements, art in Lebanon, Lebanon art, Lebanon artists, artists, Linda Boyer Artist, Linda Boyer paintings, paintings Lebanon, watercolor, acrylic, watercolor paintings, acrylic paintings, art galleries in Lebanon, artists in Lebanon"/>
+	<meta name="description" content="Linda Boyer’s art gallery out of Lorish, Pennsylvania.  Specializing in watercolor and acrylic paintings." />
+
+	<title>Art Gallery of Linda Boyer</title>
+	<link rel="shortcut icon" href="images/favicon.png"/>
+	<link rel="stylesheet" href="styles/normalize.css"/>
+	<link rel="stylesheet" href="styles/main.css"/>
+	<script src="js/iframemanipulation.js"></script>
+
+
+	<!-- js mobile nav -->
+
+	<link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
+
+</head>
+
+<body>
+	<header>
+		<a href="index.html"><img src="images/logo3.png" alt="Linda Boyer logo" title="Linda Boyer Logo" /></a>
+		<h1>Welcome to Linda Boyer's Art Gallery</h1>
+		<h2>Fine Art to brighten your day</h2>
+
+		<nav id="mobile_menu">
+		</nav>
+		<nav id="nav_menu">
+			<ul>
+				<li><a href="#" class="current">Home</a></li>
+				<li><a href="gallery.html">Gallery</a>
+					<ul>
+						<li><a href="acrylic.html">Acrylic</a></li>
+						<li><a href="watercolor.html">Watercolor</a></li>
+						<li><a href="mixedmedia.html">Mixed Media</a></li>
+					</ul></li>
+				<li><a href="">Events</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Contact</a></li>
+			</ul> 
+		</nav>
+	</header>
+
+	<main>
+		<aside>
+
+			<div id="welcome">
+				<h3>Welcome</h3>
+				<p>Thanks for visiting the online art gallery of Linda Boyer.  Linda Boyer is an artist from Lorish, Pennsylvania. If you'd like to see her work be sure to visit the <a href="gallery.html">Gallery</a></p>
+			</div>
+
+			<ul>  <!-- use of javascript to highlight which catagory image is under. clicking these change iframe photo to preview of each category -->
+				<li><a onclick="chnga();" id="acrylic" target="splash" href="images/splash/pa1splash.jpg">Acrylic</a></li>
+				<li><a onclick="chngw();" id="watercolor" target="splash" href="images/splash/pwc6splash.jpg">Watercolor</a></li>
+				<li><a onclick="chngm();" id="mm" target="splash" href="images/splash/mm2.png">Mixed Media</a></li>
+			</ul>
+
+
+		</aside>
+
+		
+
+		<section>
+			
+				<iframe name="splash" height="650" width="350" src="images/splash/pwc6splash.jpg" marginwidth="1" marginheight="0" border="0" frameborder="0" scrolling="no">
+				Your browser does not support inline frames or is currently configured not to display inline frames.
+				</iframe>
+
+		</section>
+
+		<article>
+			<h3>News</h3>
+			<p>  <!-- link to external source -->
+				Be sure to visit the Lebanon Area Fair to see some of Linda's work in person.<a href="http://lebanonareafair.com" target="blank">LAF Homepage</a>
+			</p>
+			
+
+			<ul id="info"> <!-- use of a list other than nav -->
+				<li>Linda Boyer</li>
+				<li>2359 Maple Ave.</li>
+				<li>Lorish, PA</li>
+				<li>info@lindasart.com</li>
+			</ul>
+		</article>
+
+		<img id="mobileimg" src="images/splash/pwc6splash.jpg" alt="watercolor painting by Linda Boyer" title="watercolor painting by linda boyer">
+		
+	</main>
+
+	<footer>
+		<p>Copyrighted &copy; 2016 Andrew Boyer. Posted temporarily for academic/educational (website design) purposes on a password protected university server.</p>
+	</footer>
+
+</body>
+
+
+</html>
